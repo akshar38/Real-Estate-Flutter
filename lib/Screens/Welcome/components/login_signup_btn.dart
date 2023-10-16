@@ -5,10 +5,6 @@ import '../../Login/login_screen.dart';
 import '../../Signup/signup_screen.dart';
 
 class LoginAndSignupBtn extends StatelessWidget {
-  const LoginAndSignupBtn({
-    Key? key,
-  }) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -26,8 +22,10 @@ class LoginAndSignupBtn extends StatelessWidget {
                 ),
               );
             },
+            style: ElevatedButton.styleFrom(backgroundColor: kPrimaryColor),
             child: Text(
               "Login".toUpperCase(),
+              style: TextStyle(color: Colors.white),
             ),
           ),
         ),
@@ -43,11 +41,10 @@ class LoginAndSignupBtn extends StatelessWidget {
               ),
             );
           },
-          style: ElevatedButton.styleFrom(
-              primary: kPrimaryLightColor, elevation: 0),
+          style: ElevatedButton.styleFrom(backgroundColor: kPrimaryColor),
           child: Text(
             "Sign Up".toUpperCase(),
-            style: TextStyle(color: Colors.black),
+            style: TextStyle(color: Colors.white),
           ),
         ),
       ],

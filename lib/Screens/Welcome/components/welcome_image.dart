@@ -4,17 +4,13 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../../../constants.dart';
 
 class WelcomeImage extends StatelessWidget {
-  const WelcomeImage({
-    Key? key,
-  }) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         Text(
-          "WELCOME TO Real Estate App",
-          style: TextStyle(fontWeight: FontWeight.bold),
+          "Welcome to Apni Property",
+          style: TextStyle(fontWeight: FontWeight.bold,fontFamily: 'Lobster',color: kPrimaryColor,fontSize: 22),
         ),
         SizedBox(height: defaultPadding * 2),
         Row(

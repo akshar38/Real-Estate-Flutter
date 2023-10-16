@@ -5,11 +5,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 class SocalIcon extends StatelessWidget {
   final String? iconSrc;
   final Function? press;
-  const SocalIcon({
-    Key? key,
-    this.iconSrc,
-    this.press,
-  }) : super(key: key);
+
+  const SocalIcon({Key? key, this.iconSrc, this.press}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
